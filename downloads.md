@@ -2,34 +2,50 @@
 layout: page
 permalink: /downloads/
 title: Downloads
-description: "My free close sourced applications."
-tags: [baris, sencan, isair, run32a50mch@gmail.com, no$gba, exit fate, idamt, lol, league of legends, latency, checker, network, tuner]
+description: My free close sourced applications.
+tags:
+  - baris
+  - sencan
+  - isair
+  - run32a50mch@gmail.com
+  - no$gba
+  - exit fate
+  - idamt
+  - lol
+  - league of legends
+  - latency
+  - checker
+  - network
+  - tuner
 image:
   feature: banner.png
   credit: Nina Geometrieva
-  creditlink: https://dribbble.com/shots/1682639-Sunset-Wallpaper
+  creditlink: 'https://dribbble.com/shots/1682639-Sunset-Wallpaper'
 share: true
+published: true
 ---
 
 Close sourced freebies.
 
 # No$GBA for Mac
 
-<a href="http://adf.ly/ZL1yT" class="btn btn-success">Download Stable (Build 10)</a> <a href="http://adf.ly/awbhg" class="btn btn-info">Download Beta (Build 11)</a>
+<a href="http://adf.ly/1hbZH9" class="btn btn-success">Download Build 13</a>
 
-[No$GBA](http://www.nogba.com/) is originally a Windows only Nintendo DS & GBA emulator. This is a port that I made using the popular [Wineskin](http://wineskin.urgesoftware.com/) wrapper to run No$GBA via wine. However, you don't need to have Wineskin on your Mac for this port to work.
+[No$GBA](http://www.nogba.com/) is originally a Windows only Nintendo DS & GBA emulator. This is a port that I made using the popular [Wineskin](http://wineskin.urgesoftware.com/) wrapper to run No$GBA via wine. You don't need to have Wineskin on your Mac for this port to work.
 
 ### Frequently Asked Questions
 
 __Q.__ Where are my save files located at?
 
-__A.__ They are inside the application package itself. Right click on the application, select "Show Package Contents." From there, go to drive_c -> Program Files -> NoCashGBA -> BATTERY. Your save files should be there.  
+__A.__ They are inside the application package itself. Right click on the application, select "Show Package Contents." From there, double click "Save Files" shortcut. Your save files should be there.
 
-### Known Beta Bugs
+__Q.__ How do I increase the screen size?
 
-1. White screen, game not rendering at all.
+__A.__ With build 13, you can now just drag the window corners or double click the window title to maximize it and the game area should stretch accordingly.
 
-__Solution:__ Go to "Options -> Seperate settings for each game." After that, select it again to remove the check mark next to it. Your game should now render correctly.
+__Q.__ How do I increase the running speed of the emulator?
+
+__A.__ By default, holding the "delete" button on your keyboard should mutiply the running speed by roughly 5.
 
 # LoL Latency Checker
 
