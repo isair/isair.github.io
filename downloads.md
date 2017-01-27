@@ -1,28 +1,27 @@
 ---
-layout: page
-permalink: /downloads/
 title: Downloads
+permalink: "/downloads/"
+layout: page
 description: My free close sourced applications.
 tags:
-  - baris
-  - sencan
-  - isair
-  - run32a50mch@gmail.com
-  - no$gba
-  - exit fate
-  - idamt
-  - lol
-  - league of legends
-  - latency
-  - checker
-  - network
-  - tuner
+- baris
+- sencan
+- isair
+- run32a50mch@gmail.com
+- no$gba
+- exit fate
+- idamt
+- lol
+- league of legends
+- latency
+- checker
+- network
+- tuner
 image:
   feature: banner.png
   credit: Nina Geometrieva
-  creditlink: 'https://dribbble.com/shots/1682639-Sunset-Wallpaper'
+  creditlink: https://dribbble.com/shots/1682639-Sunset-Wallpaper
 share: true
-published: true
 ---
 
 Close sourced freebies.
