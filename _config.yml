@@ -76,3 +76,4 @@ exclude:
 - package.json
 - spec
 - tmp
+- vendor
