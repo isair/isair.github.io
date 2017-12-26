@@ -9,7 +9,7 @@ collections:
     title: Uploads
     output: true
 description: Where everybody knows your name.
-disqus_shortname: 
+disqus_shortname:
 reading_time: true
 words_per_minute: 200
 url: "//barissencan.com"
@@ -23,14 +23,14 @@ owner:
   github: https://github.com/isair
   stackexchange: https://stackoverflow.com/users/1993394
   linkedin: https://www.linkedin.com/profile/view?id=92880436
-  instagram: 
-  flickr: 
-  tumblr: 
+  instagram:
+  flickr:
+  tumblr:
   google_plus: "+baris"
 background: sativa.png
 google_analytics: UA-20758307-1
-google_verify: 
-bing_verify: 
+google_verify:
+bing_verify:
 future: true
 highlighter: rouge
 markdown: kramdown
