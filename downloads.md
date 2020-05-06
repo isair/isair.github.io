@@ -1,12 +1,7 @@
 ---
-layout: splash
 title: Downloads
 permalink: "/downloads/"
-description: My free close sourced applications.
-header:
-  overlay_image: "/assets/images/banner.png"
-  caption: "Credit: [Nina Geometrieva](https://dribbble.com/shots/1682639-Sunset-Wallpaper)"
-share: true
+excerpt: My free close sourced applications.
 tags:
 - baris
 - sencan
