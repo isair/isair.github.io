@@ -1,5 +1,5 @@
 ---
-theme: minimal-mistakes-jekyll
+remote_theme: "mmistakes/minimal-mistakes@4.19.2"
 url: "//barissencan.com"
 title: Isair's Website
 description: Where everybody knows your name.
@@ -24,6 +24,8 @@ kramdown:
   entity_output: as_char
   toc_levels: 1..6
   enable_coderay: false
+plugins:
+- jekyll-include-cache
 gems:
 - jekyll-sitemap
 - jekyll-paginate
