@@ -1,6 +1,10 @@
 ---
 theme: minimal-mistakes-jekyll
+url: "//barissencan.com"
 title: Isair's Website
+description: Where everybody knows your name.
+google_analytics: UA-20758307-1
+disqus_shortname:
 timezone: America/Los_Angeles
 collections:
   posts:
@@ -9,37 +13,10 @@ collections:
   uploads:
     title: Uploads
     output: true
-description: Where everybody knows your name.
-disqus_shortname:
-reading_time: true
-words_per_minute: 200
-url: "//barissencan.com"
-owner:
-  name: Baris Sencan
-  avatar: avatar.jpg
-  bio: Managing Directory, Ilyssa Software
-  email: baris.sncn@gmail.com
-  twitter: baris_sncn
-  facebook: baris.sencan
-  github: isair
-  stackexchange: https://stackoverflow.com/users/1993394
-  linkedin: bsencan
-  instagram: barissencan
-  flickr:
-  tumblr:
-  google_plus: "+BarisSencan91"
-google_analytics: UA-20758307-1
-future: true
-highlighter: rouge
-markdown: kramdown
-gems:
-- jekyll-sitemap
-- jekyll-paginate
-- jekyll-gist
-- jekyll-feed
-- jekyll-admin
 permalink: "/:categories/:title/"
 paginate: 5
+highlighter: rouge
+markdown: kramdown
 kramdown:
   input: GFM
   auto_ids: true
@@ -47,6 +24,12 @@ kramdown:
   entity_output: as_char
   toc_levels: 1..6
   enable_coderay: false
+gems:
+- jekyll-sitemap
+- jekyll-paginate
+- jekyll-gist
+- jekyll-feed
+- jekyll-admin
 include:
 - ".htaccess"
 exclude:
