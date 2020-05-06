@@ -1,7 +1,7 @@
 ---
 title: Downloads
 permalink: "/downloads/"
-layout: page
+layout: single
 description: My free close sourced applications.
 tags:
 - baris

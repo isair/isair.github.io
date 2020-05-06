@@ -1,4 +1,5 @@
 ---
+theme: minimal-mistakes-jekyll
 title: Isair's Website
 timezone: America/Los_Angeles
 collections:
@@ -16,7 +17,7 @@ url: "//barissencan.com"
 owner:
   name: Baris Sencan
   avatar: avatar.jpg
-  bio: Leading development at Surreal, MojiLaLa, MobilePlayer, and MovieLaLa.
+  bio: Managing Directory, Ilyssa Software
   email: baris.sncn@gmail.com
   twitter: baris_sncn
   facebook: baris.sencan
@@ -27,10 +28,7 @@ owner:
   flickr:
   tumblr:
   google_plus: "+BarisSencan91"
-background: sativa.png
 google_analytics: UA-20758307-1
-google_verify:
-bing_verify:
 future: true
 highlighter: rouge
 markdown: kramdown
@@ -39,9 +37,7 @@ gems:
 - jekyll-paginate
 - jekyll-gist
 - jekyll-feed
-sass:
-  sass_dir: _sass
-  style: compressed
+- jekyll-admin
 permalink: "/:categories/:title/"
 paginate: 5
 kramdown:
@@ -55,25 +51,15 @@ include:
 - ".htaccess"
 exclude:
 - "*.less"
-- "*.sublime-project"
-- "*.sublime-workspace"
+- ".vscode"
 - ".asset-cache"
 - ".bundle"
+- vendor
 - ".jekyll-assets-cache"
 - ".sass-cache"
 - CHANGELOG
-- Capfile
 - Gemfile
-- Gruntfile.js
 - LICENSE
 - README
-- Rakefile
-- config
-- gulpfile.js
-- lib
-- log
 - node_modules
 - package.json
-- spec
-- tmp
-- vendor

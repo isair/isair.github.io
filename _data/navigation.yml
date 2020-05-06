@@ -1,7 +1,6 @@
-# Menu navigation links
+main:
+  - title: Downloads
+    url: /downloads
 
-- title: Downloads
-  url: /downloads
-
-- title: My Art
-  url: http://over9000desu.deviantart.com
+  - title: My Art
+    url: http://over9000desu.deviantart.com
