@@ -1,8 +1,12 @@
 ---
+layout: splash
 title: Downloads
 permalink: "/downloads/"
-layout: single
 description: My free close sourced applications.
+header:
+  overlay_image: "/assets/images/banner.png"
+  caption: "Credit: [Nina Geometrieva](https://dribbble.com/shots/1682639-Sunset-Wallpaper)"
+share: true
 tags:
 - baris
 - sencan
@@ -17,11 +21,6 @@ tags:
 - checker
 - network
 - tuner
-image:
-  feature: banner.png
-  credit: Nina Geometrieva
-  creditlink: https://dribbble.com/shots/1682639-Sunset-Wallpaper
-share: true
 ---
 
 Close sourced freebies.
