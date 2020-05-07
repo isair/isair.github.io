@@ -1,7 +1,7 @@
 ---
 title: Downloads
-permalink: "/downloads/"
 excerpt: My free close sourced applications.
+permalink: "/downloads/"
 tags:
 - baris
 - sencan
