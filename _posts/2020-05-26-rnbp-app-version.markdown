@@ -1,5 +1,5 @@
 ---
-title: React Native Best Practices: Single Source of App Version
+title: "React Native Best Practices: Single Source of App Version"
 date: 2020-05-26 15:38:00 00:00
 categories:
 - Mobile Development
