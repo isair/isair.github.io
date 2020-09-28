@@ -46,12 +46,6 @@ __A.__ By default, holding the "delete" button on your keyboard should mutiply t
 
 LoL Latency Checker is a lightweight cross-platform application that lets you check your in-game latency for League of Legends without having to join a game. Although the latency displayed by the application may be a little bit different from actual in-game latency, it shouldn't be far-off.
 
-# Exit Fate for Mac
-
-<a href="http://ul.to/1lcfy3nq" class="btn btn-success">Download</a>
-
-Ever heard of [Exit Fate](http://site.scfworks.com/?page_id=10)? It's an awesome freeware RPG made by SCFWorks using RPG Maker. The game itself is heavily influenced by Suikoden II (my all-time favorite video game) and although it uses some graphics and musics from other games, the story itself is _really really_ good. Since I love this game so much I decided to make an OS X app for it and make it available for free. Enjoy!
-
 # Network Tuner
 
 <a href="http://www.mediafire.com/?q3v9zqbqlgrs95e" class="btn btn-success">Download 1.1</a>
