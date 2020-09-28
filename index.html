@@ -11,15 +11,46 @@ tags:
 ---
 
 {% raw %}
-<iframe
-  id="resume"
-  title="Resume"
-  border="0"
-  width="950"
-  height="6836"
-  src="//barissencan.com/Resume/"
-></iframe>
+<div id="loader">
+  <span class="cssload-loader">
+    <span class="cssload-loader-inner"></span>
+  </span>
+</div>
+<div id="container">
+  <iframe
+    id="resume"
+    title="Resume"
+    border="0"
+    width="950"
+    height="0"
+    src="//barissencan.com/Resume/"
+    onload="onResumeLoad(this)"
+  ></iframe>
+</div>
+
+<script type="text/javascript">
+  var scale = 0.8;
+
+  function onResumeLoad(iframe) {
+    var contentHeight = iframe.contentWindow.document.body.scrollHeight;
+    iframe.height = '' + contentHeight;
+
+    var containerElement = document.getElementById('container');
+    containerElement.style['max-height'] = Math.round(contentHeight * scale);
+    containerElement.style.display = 'block';
+
+    var loaderElement = document.getElementById('loader');
+    loaderElement.style.display = 'none';
+  }
+</script>
+
 <style>
+  #loader {
+    margin: auto auto;
+  }
+  #container {
+    display: none;
+  }
   #resume {
     margin: 0 auto;
     padding: 0;
@@ -27,6 +58,259 @@ tags:
     display: block;
     transform: scale(0.8);
     transform-origin: top center;
+    overflow: hidden;
   }
+</style>
+
+<style>
+  .cssload-loader {
+	display: block;
+	margin:0 auto;
+	width: 29px;
+	height: 29px;
+	position: relative;
+	border: 4px solid rgb(255,255,255);
+	animation: cssload-loader 2.3s infinite ease;
+		-o-animation: cssload-loader 2.3s infinite ease;
+		-ms-animation: cssload-loader 2.3s infinite ease;
+		-webkit-animation: cssload-loader 2.3s infinite ease;
+		-moz-animation: cssload-loader 2.3s infinite ease;
+}
+
+.cssload-loader-inner {
+	vertical-align: top;
+	display: inline-block;
+	width: 100%;
+	background-color: rgb(255,255,255);
+	animation: cssload-loader-inner 2.3s infinite ease-in;
+		-o-animation: cssload-loader-inner 2.3s infinite ease-in;
+		-ms-animation: cssload-loader-inner 2.3s infinite ease-in;
+		-webkit-animation: cssload-loader-inner 2.3s infinite ease-in;
+		-moz-animation: cssload-loader-inner 2.3s infinite ease-in;
+}
+
+
+
+
+
+@keyframes cssload-loader {
+	0% {
+		transform: rotate(0deg);
+	}
+	
+	25% {
+		transform: rotate(180deg);
+	}
+	
+	50% {
+		transform: rotate(180deg);
+	}
+	
+	75% {
+		transform: rotate(360deg);
+	}
+	
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@-o-keyframes cssload-loader {
+	0% {
+		transform: rotate(0deg);
+	}
+	
+	25% {
+		transform: rotate(180deg);
+	}
+	
+	50% {
+		transform: rotate(180deg);
+	}
+	
+	75% {
+		transform: rotate(360deg);
+	}
+	
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@-ms-keyframes cssload-loader {
+	0% {
+		transform: rotate(0deg);
+	}
+	
+	25% {
+		transform: rotate(180deg);
+	}
+	
+	50% {
+		transform: rotate(180deg);
+	}
+	
+	75% {
+		transform: rotate(360deg);
+	}
+	
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@-webkit-keyframes cssload-loader {
+	0% {
+		transform: rotate(0deg);
+	}
+	
+	25% {
+		transform: rotate(180deg);
+	}
+	
+	50% {
+		transform: rotate(180deg);
+	}
+	
+	75% {
+		transform: rotate(360deg);
+	}
+	
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@-moz-keyframes cssload-loader {
+	0% {
+		transform: rotate(0deg);
+	}
+	
+	25% {
+		transform: rotate(180deg);
+	}
+	
+	50% {
+		transform: rotate(180deg);
+	}
+	
+	75% {
+		transform: rotate(360deg);
+	}
+	
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes cssload-loader-inner {
+	0% {
+		height: 0%;
+	}
+	
+	25% {
+		height: 0%;
+	}
+	
+	50% {
+		height: 100%;
+	}
+	
+	75% {
+		height: 100%;
+	}
+	
+	100% {
+		height: 0%;
+	}
+}
+
+@-o-keyframes cssload-loader-inner {
+	0% {
+		height: 0%;
+	}
+	
+	25% {
+		height: 0%;
+	}
+	
+	50% {
+		height: 100%;
+	}
+	
+	75% {
+		height: 100%;
+	}
+	
+	100% {
+		height: 0%;
+	}
+}
+
+@-ms-keyframes cssload-loader-inner {
+	0% {
+		height: 0%;
+	}
+	
+	25% {
+		height: 0%;
+	}
+	
+	50% {
+		height: 100%;
+	}
+	
+	75% {
+		height: 100%;
+	}
+	
+	100% {
+		height: 0%;
+	}
+}
+
+@-webkit-keyframes cssload-loader-inner {
+	0% {
+		height: 0%;
+	}
+	
+	25% {
+		height: 0%;
+	}
+	
+	50% {
+		height: 100%;
+	}
+	
+	75% {
+		height: 100%;
+	}
+	
+	100% {
+		height: 0%;
+	}
+}
+
+@-moz-keyframes cssload-loader-inner {
+	0% {
+		height: 0%;
+	}
+	
+	25% {
+		height: 0%;
+	}
+	
+	50% {
+		height: 100%;
+	}
+	
+	75% {
+		height: 100%;
+	}
+	
+	100% {
+		height: 0%;
+	}
+}
 </style>
 {% endraw %}
