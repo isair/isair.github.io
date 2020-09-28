@@ -32,12 +32,12 @@ tags:
   var scale = 0.8;
 
   function onResumeLoad(iframe) {
-    var contentHeight = iframe.contentWindow.document.body.scrollHeight;
+    var contentHeight = 6836.31; // Temporarily hard-coded.
     iframe.height = '' + contentHeight;
 
     var containerElement = document.getElementById('container');
-    containerElement.style['max-height'] = Math.round(contentHeight * scale);
     containerElement.style.display = 'block';
+    containerElement.style.maxHeight = Math.round(contentHeight * scale) + 'px';
 
     var loaderElement = document.getElementById('loader');
     loaderElement.style.display = 'none';
