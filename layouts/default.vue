@@ -2,7 +2,15 @@
   <v-app v-if="appReady">
     <v-navigation-drawer v-model="drawer" :clipped="clipped" app floating bottom>
       <v-list>
-        <v-list-item v-for="(item, i) in menuItems" :key="i" :to="item.url" router exact color="primary">
+        <v-list-item
+          v-for="(item, i) in menuItems"
+          :key="i"
+          :to="item.external ? undefined : item.url"
+          router
+          exact
+          color="primary"
+          @click="item.external ? window.open(item.url) : undefined"
+        >
           <v-list-item-icon>
             <v-icon>{{ item.icon }}</v-icon>
           </v-list-item-icon>
@@ -41,6 +49,7 @@ export default Vue.extend({
     AppLoadingIndicator,
   },
   data: () => ({
+    window,
     clipped: true,
     drawer: false,
     fixed: false,
@@ -49,6 +58,18 @@ export default Vue.extend({
         icon: 'mdi-home',
         title: 'About Me',
         url: '/',
+      },
+      {
+        icon: 'mdi-github',
+        title: 'Open Source',
+        url: 'https://github.com/isair',
+        external: true,
+      },
+      {
+        icon: 'mdi-post',
+        title: 'Blog',
+        url: 'https://medium.com/@isair',
+        external: true,
       },
       {
         icon: 'mdi-arrow-down',
@@ -61,7 +82,7 @@ export default Vue.extend({
     ...mapState(['appReady']),
   },
   created() {
-    this.$vuetify.theme.dark = true;
+    (this as any).$vuetify.theme.dark = true;
     this.prepareApp();
   },
   methods: {

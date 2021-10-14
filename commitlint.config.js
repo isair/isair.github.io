@@ -19,6 +19,7 @@ module.exports = {
         'unit',
         'e2e',
         'int',
+        'multi',
         'deps',
         'deps-dev',
       ],

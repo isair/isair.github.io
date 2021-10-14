@@ -11,7 +11,7 @@
     "build": "nuxt generate",
     "lint": "npm run test:lint -- --fix",
     "test": "run-p --print-label test:*",
-    "test:lint": "eslint --ext \".js,.vue\" --ignore-path .gitignore",
+    "test:lint": "eslint --ext \".js,.ts,.vue\" --ignore-path .gitignore",
     "test:type": "tsc --noEmit",
     "deploy": "touch ./dist/.nojekyll && echo 'barissencan.com' > ./dist/CNAME && gh-pages -d dist -t true"
   },
