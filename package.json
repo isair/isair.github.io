@@ -19,7 +19,7 @@
     "@nuxt/typescript-runtime": "^2.1.0",
     "@nuxtjs/dotenv": "^1.4.1",
     "@nuxtjs/pwa": "^3.3.5",
-    "@stripe/stripe-js": "^1.17.0",
+    "@stripe/stripe-js": "^1.19.1",
     "axios": "^0.21.1",
     "core-js": "^3.16.2",
     "date-fns": "^2.23.0",
