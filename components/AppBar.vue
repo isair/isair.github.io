@@ -7,7 +7,7 @@
     elevate-on-scroll
     shrink-on-scroll
     fade-img-on-scroll
-    src="/img/banner.webp"
+    src="/img/banner.jpg"
   >
     <template #img="{ props }">
       <v-img
