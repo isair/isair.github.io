@@ -1,7 +1,5 @@
 # Baris Sencan's Website
 
-## Build Setup
-
 ```bash
 # install dependencies
 $ npm install

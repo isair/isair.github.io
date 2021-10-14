@@ -21,6 +21,7 @@ module.exports = {
         'int',
         'multi',
         'release',
+        'repo',
         'deps',
         'deps-dev',
       ],
