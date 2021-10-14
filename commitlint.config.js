@@ -20,6 +20,7 @@ module.exports = {
         'e2e',
         'int',
         'multi',
+        'release',
         'deps',
         'deps-dev',
       ],
