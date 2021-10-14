@@ -1,0 +1,11 @@
+{
+  "name": "baris-sencan-website",
+  "short_name": "baris-sencan-website",
+  "description": "```bash # install dependencies $ npm install",
+  "icons": [],
+  "start_url": "/?standalone=true",
+  "display": "standalone",
+  "background_color": "#f6f6ee",
+  "theme_color": "#324a30",
+  "lang": "en"
+}
