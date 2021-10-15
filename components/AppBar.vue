@@ -7,7 +7,7 @@
     elevate-on-scroll
     shrink-on-scroll
     fade-img-on-scroll
-    src="/img/banner.jpg"
+    src="/img/banner.avif"
   >
     <template #img="{ props }">
       <v-img cover transition="fade-transition" position="center center" v-bind="props" />
