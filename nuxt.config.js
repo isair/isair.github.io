@@ -42,7 +42,7 @@ export default {
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
     meta: {
-      theme_color: '#5d395e',
+      theme_color: '#272f43',
     },
     manifest: {
       background_color: '#272f43',
@@ -52,13 +52,29 @@ export default {
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
     customVariables: ['~/assets/variables.scss'],
+    theme: {
+      dark: true,
+      themes: {
+        light: {
+          primary: '#fb5c04',
+          secondary: '#fb5c04',
+          accent: '#8c5064',
+          background: '#272f43',
+        },
+        dark: {
+          primary: '#fb5c04',
+          secondary: '#fb5c04',
+          accent: '#8c5064',
+          background: '#272f43',
+        },
+      },
+    },
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
 
-  router: {},
-
+  // Google Analytics configuration https://google-analytics.nuxtjs.org/options
   googleAnalytics: {
     id: 'UA-20758307-1',
   },

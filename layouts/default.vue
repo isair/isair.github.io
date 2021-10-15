@@ -94,7 +94,6 @@ export default Vue.extend({
     },
   },
   created() {
-    (this as any).$vuetify.theme.dark = true;
     this.prepareApp();
   },
   methods: {
