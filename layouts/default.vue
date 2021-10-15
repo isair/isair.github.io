@@ -2,15 +2,20 @@
   <v-app v-if="appReady">
     <v-navigation-drawer v-model="drawer" :clipped="clipped" app floating bottom>
       <v-list>
-        <v-list-item
-          v-for="(item, i) in menuItems"
-          :key="i"
-          :to="item.external ? undefined : item.url"
-          router
-          exact
-          color="primary"
-          @click="item.external ? window.open(item.url) : undefined"
-        >
+        <v-list-item v-for="(item, i) in internalMenuItems" :key="i" :to="item.url" router exact color="primary">
+          <v-list-item-icon>
+            <v-icon>{{ item.icon }}</v-icon>
+          </v-list-item-icon>
+          <v-list-item-content>
+            <v-list-item-title v-text="item.title" />
+          </v-list-item-content>
+        </v-list-item>
+      </v-list>
+
+      <v-divider v-if="externalMenuItems.length > 0" />
+
+      <v-list v-if="externalMenuItems.length > 0">
+        <v-list-item v-for="(item, i) in externalMenuItems" :key="i" color="primary" @click="window.open(item.url)">
           <v-list-item-icon>
             <v-icon>{{ item.icon }}</v-icon>
           </v-list-item-icon>
@@ -41,6 +46,7 @@ interface MenuItem {
   icon: string;
   title: string;
   url: string;
+  external?: boolean;
 }
 
 export default Vue.extend({
@@ -60,6 +66,11 @@ export default Vue.extend({
         url: '/',
       },
       {
+        icon: 'mdi-download',
+        title: 'Downloads',
+        url: '/downloads',
+      },
+      {
         icon: 'mdi-github',
         title: 'Open Source',
         url: 'https://github.com/isair',
@@ -71,15 +82,16 @@ export default Vue.extend({
         url: 'https://medium.com/@isair',
         external: true,
       },
-      {
-        icon: 'mdi-arrow-down',
-        title: 'Downloads',
-        url: '/downloads',
-      },
     ] as MenuItem[],
   }),
   computed: {
     ...mapState(['appReady']),
+    internalMenuItems() {
+      return this.menuItems.filter((item) => !item.external);
+    },
+    externalMenuItems() {
+      return this.menuItems.filter((item) => item.external);
+    },
   },
   created() {
     (this as any).$vuetify.theme.dark = true;
