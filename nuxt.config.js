@@ -42,10 +42,10 @@ export default {
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
     meta: {
-      theme_color: '#324a30',
+      theme_color: '#5d395e',
     },
     manifest: {
-      background_color: '#f6f6ee',
+      background_color: '#272f43',
     },
   },
 
