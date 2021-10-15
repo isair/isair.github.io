@@ -156,7 +156,9 @@ We have worked with MojiLaLa, Leo AR (got its app featured a few times in the Ap
 At the moment we are focusing on expanding our game server hosting business which is currently in closed beta.
 
 **Languages:** Swift, Objective-C, Java, C#, JavaScript, Bash, PowerShell
+
 **Major Libraries & Frameworks:** ARKit, ARCore, Unity, React Native, Firebase, Vue, Nuxt
+
 **Other Technologies:** NPM, Yarn, Babel, ESLint, SwiftLint, CocoaPods, Fastlane GitLab CI, GraphQL, Relay
 
 ## Leo
@@ -171,7 +173,9 @@ At the moment we are focusing on expanding our game server hosting business whic
 - Managed the hiring process of our engineers to make sure we found sufficiently experienced people with a passion and a high potential.
 
 **Languages:** Swift, Objective-C, Java, C#, JavaScript, Bash, PowerShell
+
 **Major Libraries & Frameworks:** ARKit, ARCore, Unity, Vision, CoreML, React Native, Fabric, Firebase
+
 **Other Technologies:** NPM, Yarn, Babel, ESLint, SwiftLint, CocoaPods, Carthage, Fastlane, GitLab CI, GraphQL, Relay
 
 ## MojiLaLa
@@ -183,7 +187,9 @@ At the moment we are focusing on expanding our game server hosting business whic
 Lead the development efforts for MojiLaLa Unlimited and MojiLaLa, a sticker platform with an ever growing artist and user base.
 
 **Languages:** Swift, Objective-C, JavaScript, Java, Bash
+
 **Major Libraries & Frameworks:** React Native, Fabric
+
 **Other Technologies:** NPM, Yarn, Babel, ESLint, Tailor, SwiftLint, CocoaPods, Gradle, Maven, GitLab CI, GraphQL, Relay
 
 ## MovieLaLa
@@ -199,7 +205,9 @@ Lead the development efforts for MojiLaLa Unlimited and MojiLaLa, a sticker plat
 - Later the company has been sold to Gfycat. Some apps might still remain on the stores but they aren't maintained.
 
 **Languages:** Swift, Objective-C, JavaScript, Java, Ruby, Bash
+
 **Major Libraries & Frameworks:** React Native, Fabric, Appium, Rails
+
 **Other Technologies:** NPM, Babel, ESLint, CocoaPods, Carthage, Gradle, Maven, AWS, Parse, MongoDB, PostgreSQL, Travis CI, GitLab CI, GraphQL
 
 ## BTdays Technology
@@ -214,7 +222,9 @@ Lead the development efforts for MojiLaLa Unlimited and MojiLaLa, a sticker plat
 - Built two iOS apps; one for customers, and the other for merchants.
 
 **Languages:** Python, HTML, CSS, JavaScript, Objective-C
+
 **Major Libraries & Frameworks:** Django, Foundation, Bootstrap, JQuery
+
 **Other Technologies:** Bower, CocoaPods, PostgreSQL
 
 ## Asterboot
@@ -226,6 +236,7 @@ Lead the development efforts for MojiLaLa Unlimited and MojiLaLa, a sticker plat
 Developed a cross-platform mobile app for an online deals site.
 
 **Languages:** HTML, CSS, JavaScript
+
 **Major Libraries & Frameworks:** JQuery, JQuery Mobile, PhoneGap, Titanium Mobile
 
 ## KONTAKT
@@ -240,6 +251,7 @@ KONTAKT was the biggest subculture event in Turkey which had, after its second e
 - Sole developer of the event management software which handles ticket sales, cosplay contest registration, contest voting, achievement tracking, and reward tracking.
 
 **Languages:** Python, PHP, SQL, HTML, CSS, JavaScript
+
 **Major Libraries & Frameworks:** Django, CakePHP, CodeIgniter, Bootstrap, JQuery, PhoneGap
 
 ## Coats
@@ -251,7 +263,9 @@ KONTAKT was the biggest subculture event in Turkey which had, after its second e
 Designed and developed a web based system for managing and displaying various kinds of information on LCD screens spread throughout the company.
 
 **Languages:** PHP, SQL, HTML, CSS, JavaScript
+
 **Major Libraries & Frameworks:** CodeIgniter, JQuery
+
 **Other Technologies:** MySQL`,
   }),
   head() {
