@@ -1,5 +1,124 @@
 <template>
-  <v-container><editor v-model="cv" mode="viewer" :outline="false" :render-config="renderConfig" /></v-container>
+  <v-expansion-panels>
+    <v-expansion-panel>
+      <v-expansion-panel-header>Professional Experience</v-expansion-panel-header>
+      <v-expansion-panel-content>
+        <editor v-model="cv" mode="viewer" :outline="false" />
+      </v-expansion-panel-content>
+    </v-expansion-panel>
+    <v-expansion-panel>
+      <v-expansion-panel-header>Other Experience</v-expansion-panel-header>
+      <v-expansion-panel-content>
+        <p>
+          During my final year in high school I started working on my own <strong>simple operating system</strong> using
+          <strong>C</strong> and <strong>x86 ASM</strong> for learning purposes. It did not have a GUI but supported
+          memory pagination and had a very simple shell with colour support.
+        </p>
+        <p>
+          While studying at <strong>Koç University</strong> I worked on some projects for the university itself. I have
+          designed and developed <strong>KURadyo</strong>, the official radio application of my school's radio club, for
+          Android and iOS using <strong>Titanium Mobile</strong>. I have also made the website of numerous other school
+          clubs using mainly <strong>PHP</strong> and <strong>MySQL</strong> for server-side development.
+        </p>
+        <p>
+          Between 2011 and 2012 I have developed and maintained two Mac apps for the <strong>Mac App Store</strong>. The
+          first one, <strong>Code Minifier</strong>, automatically detected and minified html, css, and js files. The
+          highest ranking it got was being the <strong>#3 top paid</strong> developer app in Turkey. My second Mac app
+          was <strong>iMemoryCleaner</strong>, the first inactive memory cleaning app to hit the Mac App Store. It
+          managed to enter the <strong>top 10</strong> paid apps list <strong>in several countries</strong>. After not
+          having the time to release any kind of updates for these apps (as I worked on more important projects and on
+          finishing my school) for a considerable amount of time, I decided not to renew my Mac developer license.
+        </p>
+        <p>
+          In years 2012 and 2013 I have joined the <strong>game jams</strong> named <strong>TGJ</strong> and
+          <strong>GGJ</strong> respectively. Acted as both the <strong>game designer</strong> and a
+          <strong>programmer</strong> in the former; was the sole programmer in the latter.
+        </p>
+        <p>
+          Another project of mine that is worth mentioning here is my <strong>Mac OS X port</strong> of the popular
+          Nintendo DS &amp; GBA emulator named <strong>No$GBA</strong>. It has so far been
+          <strong>downloaded more than 160 000 times</strong> and <strong>featured on</strong> sites like
+          <strong>Reddit</strong>.
+        </p>
+      </v-expansion-panel-content>
+    </v-expansion-panel>
+    <v-expansion-panel>
+      <v-expansion-panel-header>Education</v-expansion-panel-header>
+      <v-expansion-panel-content>
+        <h2>Koç University - Istanbul, Turkey</h2>
+        <p><strong>Bachelor of Engineering (BE), Computer Engineering</strong></p>
+        <p>September 2009 - August 2013</p>
+        <ul>
+          <li>Turkish - Speech and Composition (TURK. 100)</li>
+          <li>General Physics I (PHYS. 101)</li>
+          <li>Calculus I (MATH. 106)</li>
+          <li>Structure and Interpretation of Computer Programs (COMP. 101)</li>
+          <li>Basic Academic Writing (COMM. 101)</li>
+          <li>General Physics II (PHYS. 102)</li>
+          <li>Multivariable Calculus (MATH. 203)</li>
+          <li>Introduction to Engineering (ENGR. 100)</li>
+          <li>Introduction to Programming (COMP. 131)</li>
+          <li>Advanced Academic Writing (COMM. 102)</li>
+          <li>Discrete Computational Structures (COMP. 201)</li>
+          <li>General Chemistry (CHEM. 103)</li>
+          <li>Probability and Random Variables for Engineers (ENGR. 200)</li>
+          <li>Digital Systems Design (ELEC. 204)</li>
+          <li>Algorithms and Data Structures (COMP. 202)</li>
+          <li>World Civilizations (CIVL. 201)</li>
+          <li>Introductory Biology (BIOL. 200)</li>
+          <li>Summer Practice I (ENGR. 291)</li>
+          <li>Signals and Systems (ELEC. 201)</li>
+          <li>Computer Architecture (COMP. 303)</li>
+          <li>Software Engineering (COMP. 302)</li>
+          <li>Programming Language Concepts (COMP. 301)</li>
+          <li>Principles of Economics (ECON. 200)</li>
+          <li>Computer and Network Security (COMP. 434)</li>
+          <li>Database Management Systems (COMP. 306)</li>
+          <li>Operating Systems (COMP. 304)</li>
+          <li>Film and the Visual (ASIU. 101)</li>
+          <li>Summer Practice II (ENGR. 391)</li>
+          <li>Interactive Web Design (MAVA. 220)</li>
+          <li>The Turkish Revolution I (HIST. 301)</li>
+          <li>The Turkish Revolution II (HIST. 302)</li>
+          <li>Computer Engineering Design I (COMP. 491)</li>
+          <li>Parallel Programming (COMP. 429)</li>
+          <li>Drama (ARTS. 205)</li>
+          <li>Cinematography and Editing (MAVA. 324)</li>
+          <li>Creative Thinking in Design (MAVA. 205)</li>
+          <li>Computer Engineering Design II (COMP. 492)</li>
+          <li>The Ethical Dilemma in Literature (ASIU. 108)</li>
+          <li>Mobile Device Programming (COMP. 319)</li>
+          <li>Modern Cryptography (COMP. 443)</li>
+        </ul>
+      </v-expansion-panel-content>
+    </v-expansion-panel>
+    <v-expansion-panel>
+      <v-expansion-panel-header>Languages</v-expansion-panel-header>
+      <v-expansion-panel-content>
+        <ul>
+          <li>English</li>
+          <li>Turkish</li>
+          <li>Japanese</li>
+          <li>German</li>
+        </ul>
+      </v-expansion-panel-content>
+    </v-expansion-panel>
+    <v-expansion-panel>
+      <v-expansion-panel-header>Hobbies &amp; Interests</v-expansion-panel-header>
+      <v-expansion-panel-content>
+        <ul>
+          <li>Digital Art</li>
+          <li>Psychology</li>
+          <li>Philosophy</li>
+          <li>Science &amp; Technology</li>
+          <li>Skiing</li>
+          <li>Aikido</li>
+          <li>Programming</li>
+          <li>Acting</li>
+        </ul>
+      </v-expansion-panel-content>
+    </v-expansion-panel>
+  </v-expansion-panels>
 </template>
 
 <script lang="ts">
@@ -11,14 +130,7 @@ export default Vue.extend({
     Editor,
   },
   data: () => ({
-    renderConfig: {
-      mermaid: {
-        theme: 'dark',
-      },
-    },
-    cv: `# Professional Experience
-
-## Equals Money
+    cv: `## Equals Money
 
 ### Engineering Team Lead
 
@@ -140,87 +252,7 @@ Designed and developed a web based system for managing and displaying various ki
 
 **Languages:** PHP, SQL, HTML, CSS, JavaScript
 **Major Libraries & Frameworks:** CodeIgniter, JQuery
-**Other Technologies:** MySQL
-
-# Other Experience
-
-During my final year in high school I started working on my own **simple operating system** using **C** and **x86 ASM** for learning purposes. After several years of inactivity I have recently drafted a plan for development, moved the project to GitLab, and started working on it again. The project aims to create a **WebASM** based operating system.
-
-While studying at **Koç University** I worked on some projects for the university itself. I have designed and developed **KURadyo**, the official radio application of my school's radio club, for Android and iOS using **Titanium Mobile**. I have also made the website of numerous other school clubs using mainly **PHP** and **MySQL** for server-side development.
-
-Between 2011 and 2012 I have developed and maintained two Mac apps for the **Mac App Store**. The first one, **Code Minifier**, automatically detected and minified html, css, and js files. The highest ranking it got was being the **#3 top paid** developer app in Turkey. My second Mac app was **iMemoryCleaner**, the first inactive memory cleaning app to hit the Mac App Store. It managed to enter the **top 10** paid apps list **in several countries**. After not having the time to release any kind of updates for these apps (as I worked on more important projects and on finishing my school) for a considerable amount of time, I decided not to renew my Mac developer license.
-
-In years 2012 and 2013 I have joined the **game jams** named **TGJ** and **GGJ** respectively. Acted as both the **game designer** and a **programmer** in the former; was the sole programmer in the latter.
-
-Another project of mine that is worth mentioning here is my **Mac OS X port** of the popular Nintendo DS & GBA emulator named **No$GBA**. It has so far been **downloaded more than 160 000 times** and **featured on** sites like **Reddit**.
-
-# Education
-
-## Koç University - Istanbul, Turkey
-
-### Bachelor of Engineering (BE), Computer Engineering
-
-#### September 2009 - August 2013
-
-- Turkish - Speech and Composition (TURK. 100)
-- General Physics I (PHYS. 101)
-- Calculus I (MATH. 106)
-- Structure and Interpretation of Computer Programs (COMP. 101)
-- Basic Academic Writing (COMM. 101)
-- General Physics II (PHYS. 102)
-- Multivariable Calculus (MATH. 203)
-- Introduction to Engineering (ENGR. 100)
-- Introduction to Programming (COMP. 131)
-- Advanced Academic Writing (COMM. 102)
-- Discrete Computational Structures (COMP. 201)
-- General Chemistry (CHEM. 103)
-- Probability and Random Variables for Engineers (ENGR. 200)
-- Digital Systems Design (ELEC. 204)
-- Algorithms and Data Structures (COMP. 202)
-- World Civilizations (CIVL. 201)
-- Introductory Biology (BIOL. 200)
-- Summer Practice I (ENGR. 291)
-- Signals and Systems (ELEC. 201)
-- Computer Architecture (COMP. 303)
-- Software Engineering (COMP. 302)
-- Programming Language Concepts (COMP. 301)
-- Principles of Economics (ECON. 200)
-- Computer and Network Security (COMP. 434)
-- Database Management Systems (COMP. 306)
-- Operating Systems (COMP. 304)
-- Film and the Visual (ASIU. 101)
-- Summer Practice II (ENGR. 391)
-- Interactive Web Design (MAVA. 220)
-- The Turkish Revolution I (HIST. 301)
-- The Turkish Revolution II (HIST. 302)
-- Computer Engineering Design I (COMP. 491)
-- Parallel Programming (COMP. 429)
-- Drama (ARTS. 205)
-- Cinematography and Editing (MAVA. 324)
-- Creative Thinking in Design (MAVA. 205)
-- Computer Engineering Design II (COMP. 492)
-- The Ethical Dilemma in Literature (ASIU. 108)
-- Mobile Device Programming (COMP. 319)
-- Modern Cryptography (COMP. 443)
-
-# Languages
-
-- **English**
-- **Turkish**
-- Japanese
-- German
-
-# Hobbies & Interests
-
-- Digital Art
-- Psychology
-- Philosophy
-- Science & Technology
-- Skiing
-- Aikido
-- Programming
-- Acting
-`,
+**Other Technologies:** MySQL`,
   }),
   head() {
     return {
