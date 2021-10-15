@@ -46,6 +46,7 @@ export default {
       theme_color: '#272f41',
     },
     manifest: {
+      name: 'Baris Sencan',
       background_color: '#272f41',
     },
   },
