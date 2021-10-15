@@ -42,6 +42,7 @@ export default {
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
     meta: {
+      name: 'Baris Sencan',
       theme_color: '#272f41',
     },
     manifest: {
