@@ -3,7 +3,7 @@
     <v-expansion-panel v-for="(item, i) in items" :key="i">
       <v-expansion-panel-header>{{ item.title }}</v-expansion-panel-header>
       <v-expansion-panel-content>
-        <v-btn color="blue-grey" class="ma-2 white--text" @click="window.open(item.url)">
+        <v-btn color="primary" class="ma-2 white--text" @click="window.open(item.url)">
           Download {{ item.version }}
           <v-icon right dark>mdi-download</v-icon>
         </v-btn>

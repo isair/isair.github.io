@@ -32,6 +32,19 @@ export default {
 </script>
 
 <style>
+html,
+.v-application {
+  background-color: var(--v-background-base) !important;
+}
+
+.v-expansion-panel {
+  background-color: var(--v-panel-base) !important;
+}
+
+.v-navigation-drawer__content {
+  background-color: var(--v-drawer-base) !important;
+}
+
 .my-app.v-application .primary--text {
   color: var(--v-primary-base) !important;
 }

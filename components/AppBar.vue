@@ -10,13 +10,7 @@
     src="/img/banner.jpg"
   >
     <template #img="{ props }">
-      <v-img
-        cover
-        transition="fade-transition"
-        position="center center"
-        v-bind="props"
-        gradient="to top, rgba(0,0,0,.5), rgba(0,0,0,0)"
-      />
+      <v-img cover transition="fade-transition" position="center center" v-bind="props" />
     </template>
 
     <v-app-bar-nav-icon

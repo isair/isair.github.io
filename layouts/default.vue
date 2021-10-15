@@ -32,7 +32,9 @@
       <nuxt />
     </v-main>
   </v-app>
-  <app-loading-indicator v-else />
+  <v-app v-else>
+    <app-loading-indicator />
+  </v-app>
 </template>
 
 <script lang="ts">
@@ -103,6 +105,19 @@ export default Vue.extend({
 </script>
 
 <style>
+html,
+.v-application {
+  background-color: var(--v-background-base) !important;
+}
+
+.v-expansion-panel {
+  background-color: var(--v-panel-base) !important;
+}
+
+.v-navigation-drawer__content {
+  background-color: var(--v-drawer-base) !important;
+}
+
 .my-app.v-application .primary--text {
   color: var(--v-primary-base) !important;
 }

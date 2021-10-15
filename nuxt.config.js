@@ -42,10 +42,10 @@ export default {
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
     meta: {
-      theme_color: '#272f43',
+      theme_color: '#272f41',
     },
     manifest: {
-      background_color: '#272f43',
+      background_color: '#272f41',
     },
   },
 
@@ -54,18 +54,25 @@ export default {
     customVariables: ['~/assets/variables.scss'],
     theme: {
       dark: true,
+      options: {
+        customProperties: true,
+      },
       themes: {
         light: {
           primary: '#fb5c04',
-          secondary: '#fb5c04',
+          secondary: '#fdcc02',
           accent: '#8c5064',
-          background: '#272f43',
+          background: '#272f41',
+          panel: '#403454',
+          drawer: '#272f41',
         },
         dark: {
           primary: '#fb5c04',
-          secondary: '#fb5c04',
+          secondary: '#fdcc02',
           accent: '#8c5064',
-          background: '#272f43',
+          background: '#272f41',
+          panel: '#403454',
+          drawer: '#272f41',
         },
       },
     },
