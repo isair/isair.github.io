@@ -19,7 +19,12 @@
       />
     </template>
 
-    <v-app-bar-nav-icon v-if="!noDrawer" class="v-xs-none v-sm-block" @click.stop="$emit('toggle-drawer')" />
+    <v-app-bar-nav-icon
+      v-if="!noDrawer"
+      aria-label="toggle navigation menu"
+      class="v-xs-none v-sm-block"
+      @click.stop="$emit('toggle-drawer')"
+    />
 
     <v-app-bar-title>
       <span v-if="label">
