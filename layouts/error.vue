@@ -33,7 +33,8 @@ export default {
 
 <style>
 html,
-.v-application {
+.v-application,
+.v-toolbar {
   background-color: var(--v-background-base) !important;
 }
 
