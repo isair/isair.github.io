@@ -132,7 +132,7 @@ export default Vue.extend({
   data: () => ({
     cv: `## Equals Money
 
-### Engineering Team Lead
+### Engineering Lead
 
 #### Jan 2021 - ...
 
