@@ -131,10 +131,16 @@ export default Vue.extend({
   },
   data: () => ({
     cv: `## Equals Money
+    
+### Head of Product Engineering
+
+#### Feb 2023 - ...
+
+Leading the product engineering department and the various projects under it with a focus on optimising processes, improving user experience, and personal growth for our employees.
 
 ### Engineering Lead
 
-#### Jan 2021 - ...
+#### Jan 2021 - Feb 2023
 
 - Successfully pitched to the business the viability of going the PWA route for our new generation of products.
 - Leading the various feature teams for building the front-end of Equals Money.
