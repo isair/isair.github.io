@@ -1,6 +1,7 @@
 {
   "name": "Baris Sencan",
   "short_name": "baris-sencan-website",
+  "description": "```bash # install dependencies $ npm install",
   "icons": [
     {
       "src": "/_nuxt/icons/icon_64x64.9c3139.png",
