@@ -136,7 +136,8 @@ export default Vue.extend({
 
 #### Feb 2023 - ...
 
-Leading the product engineering department and the various projects under it with a focus on optimising processes, improving user experience, and personal growth for our employees.
+- Built an AI code reviewer to help developers, further reducing the time from ideation to delivery.
+- Leading the product engineering department and the various projects under it with a focus on optimising processes, improving user experience, and personal growth for our employees.
 
 ### Engineering Lead
 
