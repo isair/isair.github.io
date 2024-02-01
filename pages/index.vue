@@ -156,17 +156,23 @@ export default Vue.extend({
 
 #### Aug 2018 - ...
 
-We are a UK based mobile development agency specialising in providing affordable high quality services that utilise the newest technologies.
+Founder of Ilyssa Software, a UK based technology company delivering high quality mobile application development and server hosting services.
 
-We have worked with MojiLaLa, Leo AR (got its app featured a few times in the App Store), Cliqe, Tapp, and FairFX - which is the #1 holiday money company in the UK according to TrustPilot.
+We have worked with MojiLaLa, Leo AR (gotten them featured a few times in the App Store), Cliqe, Tapp, and FairFX - which is the #1 holiday money company in the UK according to TrustPilot.
 
-At the moment we are focusing on expanding our game server hosting business which is currently in closed beta.
 
-**Languages:** Swift, Objective-C, Java, C#, JavaScript, Bash, PowerShell
+At the moment we are focusing on expanding our game server hosting business, available under [https://hosting.ilyssa.software](https://hosting.ilyssa.software).
 
-**Major Libraries & Frameworks:** ARKit, ARCore, Unity, React Native, Firebase, Vue, Nuxt
 
-**Other Technologies:** NPM, Yarn, Babel, ESLint, SwiftLint, CocoaPods, Fastlane GitLab CI, GraphQL, Relay
+
+**Languages:** Swift, Objective-C, Java, C#, JavaScript, TypeScript, Bash, PowerShell
+
+**Major Libraries & Frameworks:** ARKit, ARCore, Unity, React Native, Firebase, Vue, Nuxt, Next.js
+
+
+
+
+**Other Technologies:** NPM, PNPM, Yarn, Babel, ESLint, SwiftLint, CocoaPods, Fastlane, GitLab CI, GitHub Actions, Vercel, GraphQL, Relay
 
 ## Leo
 
