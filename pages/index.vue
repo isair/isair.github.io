@@ -131,13 +131,16 @@ export default Vue.extend({
   },
   data: () => ({
     cv: `## Equals Money
-    
+
 ### Head of Product Engineering
 
 #### Feb 2023 - ...
 
-- Built an AI code reviewer to help developers, further reducing the time from ideation to delivery.
-- Leading the product engineering department and the various projects under it with a focus on optimising processes, improving user experience, and personal growth for our employees.
+- Heading the product engineering department which owns the user-facing applications of all our brands under the Equals Group, and all our white labels.
+- Driven the integration of Roqqett's offerings successfully into our products one month after buying the company, which beforehand was a product not ready for production yet.
+- Lead the upgrade, which was a complete rewrite, of FairFX's legacy applications onto our new Equals Money platform, delivering the entire project within three months.
+- Developed a homebrew AI that is capable of reviewing code for security vulnerabilities, best practices, and alignment with specs in linked tickets, which is now a part of our CI/CD pipeline.
+- Worked with the design department to ensure we have a limited set of palette, contextual colours, size tokens, etc. - a reliable design system, which included a standardised way of defining icons and illustrations that get auto packaged.
 
 ### Engineering Lead
 
