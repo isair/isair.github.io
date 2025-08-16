@@ -29,7 +29,9 @@
     <app-bar :clipped="clipped" @toggle-drawer="drawer = !drawer" />
 
     <v-main>
-      <nuxt />
+      <v-container class="page-container" fluid>
+        <nuxt />
+      </v-container>
     </v-main>
   </v-app>
   <v-app v-else>
@@ -121,5 +123,10 @@ html,
 
 .my-app.v-application .primary--text {
   color: var(--v-primary-base) !important;
+}
+
+.page-container {
+  max-width: 1100px;
+  padding-top: 0;
 }
 </style>
