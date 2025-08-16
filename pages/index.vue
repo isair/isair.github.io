@@ -3,7 +3,9 @@
     <v-expansion-panel>
       <v-expansion-panel-header>Professional Experience</v-expansion-panel-header>
       <v-expansion-panel-content>
-        <editor v-model="cv" mode="viewer" :outline="false" />
+        <div class="cv-viewer">
+          <editor v-model="cv" mode="viewer" :outline="false" />
+        </div>
       </v-expansion-panel-content>
     </v-expansion-panel>
     <v-expansion-panel>
