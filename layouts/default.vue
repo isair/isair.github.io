@@ -91,13 +91,16 @@ export default Vue.extend({
   computed: {
     ...mapState(['appReady']),
     internalMenuItems() {
-      return this.menuItems.filter((item) => !item.external);
+      return this.menuItems.filter((item: MenuItem) => !item.external);
     },
     externalMenuItems() {
-      return this.menuItems.filter((item) => item.external);
+      return this.menuItems.filter((item: MenuItem) => item.external);
     },
   },
   created() {
+    if (this.$vuetify && this.$vuetify.breakpoint && this.$vuetify.breakpoint.mdAndUp) {
+      this.drawer = true;
+    }
     this.prepareApp();
   },
   methods: {
