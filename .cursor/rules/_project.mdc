@@ -1,0 +1,9 @@
+---
+description:
+globs:
+alwaysApply: false
+---
+
+Local server is likely already running on port 3000.
+
+When you are making changes, always test using browsermcp before finalising and committing your changes.

@@ -7,6 +7,7 @@
     elevate-on-scroll
     shrink-on-scroll
     fade-img-on-scroll
+    :height="$vuetify && $vuetify.breakpoint.mdAndUp ? 200 : undefined"
     src="/img/banner.jpg"
     :style="{ '--banner-left': `${$vuetify.application.left}px` }"
   >
