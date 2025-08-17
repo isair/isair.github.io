@@ -1,6 +1,6 @@
 <template>
   <v-app v-if="appReady">
-    <v-navigation-drawer v-model="drawer" :clipped="clipped" app floating bottom>
+    <v-navigation-drawer v-model="drawer" :clipped="clipped" app>
       <v-list>
         <v-list-item v-for="(item, i) in internalMenuItems" :key="i" :to="item.url" router exact color="primary">
           <v-list-item-icon>
@@ -60,7 +60,7 @@ export default Vue.extend({
   },
   data: () => ({
     window,
-    clipped: true,
+    clipped: false,
     drawer: false,
     fixed: false,
     menuItems: [

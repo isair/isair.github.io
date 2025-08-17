@@ -8,6 +8,7 @@
     shrink-on-scroll
     fade-img-on-scroll
     src="/img/banner.jpg"
+    :style="{ '--banner-left': `${$vuetify.application.left}px` }"
   >
     <template #img="{ props }">
       <v-img cover transition="fade-transition" position="center center" v-bind="props" />
@@ -52,3 +53,10 @@ export default Vue.extend({
   },
 });
 </script>
+
+<style scoped>
+.v-app-bar .v-app-bar__image {
+  left: var(--banner-left, 0) !important;
+  width: calc(100% - var(--banner-left, 0)) !important;
+}
+</style>
