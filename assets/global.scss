@@ -31,4 +31,91 @@ html, body {
 /* tighten expansion panel content spacing */
 .v-expansion-panel-content__wrap { padding: 16px 20px; }
 
+/* Hero utilities */
+.hero {
+  padding: 24px 20px 8px;
+  max-width: 600px; /* Constrain the title and subtitle width */
+}
+.hero-title {
+  font-weight: 700;
+  font-size: 1.5rem;
+  letter-spacing: -0.01em;
+}
+.hero-subtitle {
+  color: rgba(255,255,255,0.8);
+  margin-top: 4px;
+}
 
+/* Expansion panel header styling for a more professional look */
+.v-expansion-panel-header {
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  justify-content: flex-start !important;
+  text-align: left;
+}
+
+/* Keep spacing/typography without fighting Vuetify's internal layout */
+.v-expansion-panel-header {
+  padding: 16px 24px !important;
+  text-align: left !important;
+}
+
+/* Ensure header content (icon + label) is left-aligned per Vuetify v2 API */
+.v-expansion-panel-header .v-expansion-panel-header__content {
+  justify-content: flex-start !important;
+  text-align: left !important;
+  margin: 0 !important;
+}
+
+.v-expansion-panel-header .v-expansion-panel-header__icon {
+  margin-left: auto !important;
+  margin-right: 0 !important;
+}
+
+/* Ensure header-leading icons sit directly before text on the left */
+.v-expansion-panel-header .v-icon {
+  margin-left: 0 !important;
+  margin-right: 8px !important;
+  flex-shrink: 0 !important;
+}
+
+/* Fixed-width icon slot to align different glyph widths */
+.expansion-header__icon {
+  width: 32px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 8px;
+}
+
+/* Card-like body styling to vary surfaces */
+.v-expansion-panel-content__wrap {
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0));
+  border-left: 2px solid rgba(253, 204, 2, 0.25);
+}
+
+/* Panel container rounded and elevated */
+.v-expansion-panels { border-radius: 12px; overflow: hidden; }
+.v-expansion-panels .v-expansion-panel { box-shadow: 0 2px 0 rgba(0,0,0,0.06) inset; }
+
+/* Keep expand chevron anchored right while header content stays left */
+.v-expansion-panel-header__icon { margin-left: auto; }
+
+/* Ensure consistent top spacing inside all panel contents */
+.v-expansion-panel-content__wrap > *:first-child { margin-top: 12px; }
+
+/* Markdown editor viewer fixes: ensure wrapping and no odd background */
+.cv-viewer, .v-markdown-editor, .markdown-body {
+  white-space: normal !important;
+  overflow-wrap: anywhere;
+}
+.v-markdown-editor { background: transparent !important; }
+
+
+
+/* Make list items denser and more legible */
+.v-list-item__title { font-weight: 600; }
+.v-list .v-list-item--active { background: rgba(251, 92, 4, 0.12) !important; }
+
+/* Footer subtle top border */
+.v-footer { border-top: 1px solid rgba(255,255,255,0.08); }

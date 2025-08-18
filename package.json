@@ -2,13 +2,13 @@
   "name": "baris-sencan-website",
   "version": "1.0.0",
   "private": true,
-  "engine": {
-    "node": "14.15"
+  "engines": {
+    "node": "22.x"
   },
   "scripts": {
     "postinstall": "husky install",
-    "dev": "nuxt",
-    "build": "nuxt generate",
+    "dev": "NODE_OPTIONS=--openssl-legacy-provider nuxt",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider nuxt generate",
     "lint": "npm run test:lint -- --fix",
     "test": "run-p --print-label test:*",
     "test:lint": "eslint --ext \".js,.ts,.vue\" --ignore-path .gitignore",
