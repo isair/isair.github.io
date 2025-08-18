@@ -321,11 +321,7 @@ Designed and developed a web based system for managing and displaying various ki
             '@type': 'Person',
             name: 'Baris Sencan',
             url: 'https://barissencan.com',
-            sameAs: [
-              'https://github.com/isair',
-              'https://www.linkedin.com/in/barissencan',
-              'https://medium.com/@isair',
-            ],
+            sameAs: ['https://github.com/isair', 'https://www.linkedin.com/in/bsencan', 'https://medium.com/@isair'],
             jobTitle: 'Head of Product Engineering',
             worksFor: {
               '@type': 'Organization',

@@ -30,7 +30,7 @@
       <v-btn icon aria-label="GitHub" @click="open('https://github.com/isair')">
         <v-icon>mdi-github</v-icon>
       </v-btn>
-      <v-btn icon aria-label="LinkedIn" @click="open('https://www.linkedin.com/in/barissencan')">
+      <v-btn icon aria-label="LinkedIn" @click="open('https://www.linkedin.com/in/bsencan')">
         <v-icon>mdi-linkedin</v-icon>
       </v-btn>
       <v-btn icon aria-label="Email" @click="open('mailto:baris@writeme.com')">
