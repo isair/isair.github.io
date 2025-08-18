@@ -1,154 +1,148 @@
 <template>
-  <div>
-    <section class="hero">
-      <div class="hero-title">About Me</div>
-      <div class="hero-subtitle">Selected work, experience, and interests</div>
-    </section>
-    <v-expansion-panels>
-      <v-expansion-panel>
-        <v-expansion-panel-header>
-          <template #actions>
-            <v-icon>$expand</v-icon>
-          </template>
-          <v-row no-gutters align="center">
-            <v-col cols="auto">
-              <v-icon>mdi-briefcase</v-icon>
-            </v-col>
-            <v-col class="ml-2"> Professional Experience </v-col>
-          </v-row>
-        </v-expansion-panel-header>
-        <v-expansion-panel-content>
-          <div class="cv-viewer">
-            <editor v-model="cv" mode="viewer" :outline="false" />
-          </div>
-        </v-expansion-panel-content>
-      </v-expansion-panel>
-      <v-expansion-panel>
-        <v-expansion-panel-header>
-          <template #actions>
-            <v-icon>$expand</v-icon>
-          </template>
-          <v-row no-gutters align="center">
-            <v-col cols="auto">
-              <v-icon>mdi-lightbulb-on-outline</v-icon>
-            </v-col>
-            <v-col class="ml-2"> Other Experience </v-col>
-          </v-row>
-        </v-expansion-panel-header>
-        <v-expansion-panel-content>
-          <div class="cv-viewer">
-            <editor :value="otherExperienceMd" mode="viewer" :outline="false" />
-          </div>
-        </v-expansion-panel-content>
-      </v-expansion-panel>
-      <v-expansion-panel>
-        <v-expansion-panel-header>
-          <template #actions>
-            <v-icon>$expand</v-icon>
-          </template>
-          <v-row no-gutters align="center">
-            <v-col cols="auto">
-              <v-icon>mdi-school</v-icon>
-            </v-col>
-            <v-col class="ml-2"> Education </v-col>
-          </v-row>
-        </v-expansion-panel-header>
-        <v-expansion-panel-content>
-          <h2>Koç University - Istanbul, Turkey</h2>
-          <p><strong>Bachelor of Engineering (BE), Computer Engineering</strong></p>
-          <p>September 2009 - August 2013</p>
-          <ul>
-            <li>Turkish - Speech and Composition (TURK. 100)</li>
-            <li>General Physics I (PHYS. 101)</li>
-            <li>Calculus I (MATH. 106)</li>
-            <li>Structure and Interpretation of Computer Programs (COMP. 101)</li>
-            <li>Basic Academic Writing (COMM. 101)</li>
-            <li>General Physics II (PHYS. 102)</li>
-            <li>Multivariable Calculus (MATH. 203)</li>
-            <li>Introduction to Engineering (ENGR. 100)</li>
-            <li>Introduction to Programming (COMP. 131)</li>
-            <li>Advanced Academic Writing (COMM. 102)</li>
-            <li>Discrete Computational Structures (COMP. 201)</li>
-            <li>General Chemistry (CHEM. 103)</li>
-            <li>Probability and Random Variables for Engineers (ENGR. 200)</li>
-            <li>Digital Systems Design (ELEC. 204)</li>
-            <li>Algorithms and Data Structures (COMP. 202)</li>
-            <li>World Civilizations (CIVL. 201)</li>
-            <li>Introductory Biology (BIOL. 200)</li>
-            <li>Summer Practice I (ENGR. 291)</li>
-            <li>Signals and Systems (ELEC. 201)</li>
-            <li>Computer Architecture (COMP. 303)</li>
-            <li>Software Engineering (COMP. 302)</li>
-            <li>Programming Language Concepts (COMP. 301)</li>
-            <li>Principles of Economics (ECON. 200)</li>
-            <li>Computer and Network Security (COMP. 434)</li>
-            <li>Database Management Systems (COMP. 306)</li>
-            <li>Operating Systems (COMP. 304)</li>
-            <li>Film and the Visual (ASIU. 101)</li>
-            <li>Summer Practice II (ENGR. 391)</li>
-            <li>Interactive Web Design (MAVA. 220)</li>
-            <li>The Turkish Revolution I (HIST. 301)</li>
-            <li>The Turkish Revolution II (HIST. 302)</li>
-            <li>Computer Engineering Design I (COMP. 491)</li>
-            <li>Parallel Programming (COMP. 429)</li>
-            <li>Drama (ARTS. 205)</li>
-            <li>Cinematography and Editing (MAVA. 324)</li>
-            <li>Creative Thinking in Design (MAVA. 205)</li>
-            <li>Computer Engineering Design II (COMP. 492)</li>
-            <li>The Ethical Dilemma in Literature (ASIU. 108)</li>
-            <li>Mobile Device Programming (COMP. 319)</li>
-            <li>Modern Cryptography (COMP. 443)</li>
-          </ul>
-        </v-expansion-panel-content>
-      </v-expansion-panel>
-      <v-expansion-panel>
-        <v-expansion-panel-header>
-          <template #actions>
-            <v-icon>$expand</v-icon>
-          </template>
-          <v-row no-gutters align="center">
-            <v-col cols="auto">
-              <v-icon>mdi-translate</v-icon>
-            </v-col>
-            <v-col class="ml-2"> Languages </v-col>
-          </v-row>
-        </v-expansion-panel-header>
-        <v-expansion-panel-content>
-          <div>
-            <v-chip class="ma-1" color="secondary" text-color="#1a1a1a">English</v-chip>
-            <v-chip class="ma-1" color="secondary" text-color="#1a1a1a">Turkish</v-chip>
-            <v-chip class="ma-1" color="secondary" text-color="#1a1a1a">Japanese</v-chip>
-            <v-chip class="ma-1" color="secondary" text-color="#1a1a1a">German</v-chip>
-          </div>
-        </v-expansion-panel-content>
-      </v-expansion-panel>
-      <v-expansion-panel>
-        <v-expansion-panel-header>
-          <template #actions>
-            <v-icon>$expand</v-icon>
-          </template>
-          <v-row no-gutters align="center">
-            <v-col cols="auto">
-              <v-icon>mdi-heart-outline</v-icon>
-            </v-col>
-            <v-col class="ml-2"> Hobbies &amp; Interests </v-col>
-          </v-row>
-        </v-expansion-panel-header>
-        <v-expansion-panel-content>
-          <div>
-            <v-chip class="ma-1" color="accent">Digital Art</v-chip>
-            <v-chip class="ma-1" color="accent">Psychology</v-chip>
-            <v-chip class="ma-1" color="accent">Philosophy</v-chip>
-            <v-chip class="ma-1" color="accent">Science &amp; Technology</v-chip>
-            <v-chip class="ma-1" color="accent">Skiing</v-chip>
-            <v-chip class="ma-1" color="accent">Aikido</v-chip>
-            <v-chip class="ma-1" color="accent">Programming</v-chip>
-            <v-chip class="ma-1" color="accent">Acting</v-chip>
-          </div>
-        </v-expansion-panel-content>
-      </v-expansion-panel>
-    </v-expansion-panels>
-  </div>
+  <v-expansion-panels>
+    <v-expansion-panel>
+      <v-expansion-panel-header>
+        <template #actions>
+          <v-icon>$expand</v-icon>
+        </template>
+        <v-row no-gutters align="center">
+          <v-col cols="auto">
+            <v-icon>mdi-briefcase</v-icon>
+          </v-col>
+          <v-col class="ml-2"> Professional Experience </v-col>
+        </v-row>
+      </v-expansion-panel-header>
+      <v-expansion-panel-content>
+        <div class="cv-viewer">
+          <editor v-model="cv" mode="viewer" :outline="false" />
+        </div>
+      </v-expansion-panel-content>
+    </v-expansion-panel>
+    <v-expansion-panel>
+      <v-expansion-panel-header>
+        <template #actions>
+          <v-icon>$expand</v-icon>
+        </template>
+        <v-row no-gutters align="center">
+          <v-col cols="auto">
+            <v-icon>mdi-lightbulb-on-outline</v-icon>
+          </v-col>
+          <v-col class="ml-2"> Other Experience </v-col>
+        </v-row>
+      </v-expansion-panel-header>
+      <v-expansion-panel-content>
+        <div class="cv-viewer">
+          <editor :value="otherExperienceMd" mode="viewer" :outline="false" />
+        </div>
+      </v-expansion-panel-content>
+    </v-expansion-panel>
+    <v-expansion-panel>
+      <v-expansion-panel-header>
+        <template #actions>
+          <v-icon>$expand</v-icon>
+        </template>
+        <v-row no-gutters align="center">
+          <v-col cols="auto">
+            <v-icon>mdi-school</v-icon>
+          </v-col>
+          <v-col class="ml-2"> Education </v-col>
+        </v-row>
+      </v-expansion-panel-header>
+      <v-expansion-panel-content>
+        <h2>Koç University - Istanbul, Turkey</h2>
+        <p><strong>Bachelor of Engineering (BE), Computer Engineering</strong></p>
+        <p>September 2009 - August 2013</p>
+        <ul>
+          <li>Turkish - Speech and Composition (TURK. 100)</li>
+          <li>General Physics I (PHYS. 101)</li>
+          <li>Calculus I (MATH. 106)</li>
+          <li>Structure and Interpretation of Computer Programs (COMP. 101)</li>
+          <li>Basic Academic Writing (COMM. 101)</li>
+          <li>General Physics II (PHYS. 102)</li>
+          <li>Multivariable Calculus (MATH. 203)</li>
+          <li>Introduction to Engineering (ENGR. 100)</li>
+          <li>Introduction to Programming (COMP. 131)</li>
+          <li>Advanced Academic Writing (COMM. 102)</li>
+          <li>Discrete Computational Structures (COMP. 201)</li>
+          <li>General Chemistry (CHEM. 103)</li>
+          <li>Probability and Random Variables for Engineers (ENGR. 200)</li>
+          <li>Digital Systems Design (ELEC. 204)</li>
+          <li>Algorithms and Data Structures (COMP. 202)</li>
+          <li>World Civilizations (CIVL. 201)</li>
+          <li>Introductory Biology (BIOL. 200)</li>
+          <li>Summer Practice I (ENGR. 291)</li>
+          <li>Signals and Systems (ELEC. 201)</li>
+          <li>Computer Architecture (COMP. 303)</li>
+          <li>Software Engineering (COMP. 302)</li>
+          <li>Programming Language Concepts (COMP. 301)</li>
+          <li>Principles of Economics (ECON. 200)</li>
+          <li>Computer and Network Security (COMP. 434)</li>
+          <li>Database Management Systems (COMP. 306)</li>
+          <li>Operating Systems (COMP. 304)</li>
+          <li>Film and the Visual (ASIU. 101)</li>
+          <li>Summer Practice II (ENGR. 391)</li>
+          <li>Interactive Web Design (MAVA. 220)</li>
+          <li>The Turkish Revolution I (HIST. 301)</li>
+          <li>The Turkish Revolution II (HIST. 302)</li>
+          <li>Computer Engineering Design I (COMP. 491)</li>
+          <li>Parallel Programming (COMP. 429)</li>
+          <li>Drama (ARTS. 205)</li>
+          <li>Cinematography and Editing (MAVA. 324)</li>
+          <li>Creative Thinking in Design (MAVA. 205)</li>
+          <li>Computer Engineering Design II (COMP. 492)</li>
+          <li>The Ethical Dilemma in Literature (ASIU. 108)</li>
+          <li>Mobile Device Programming (COMP. 319)</li>
+          <li>Modern Cryptography (COMP. 443)</li>
+        </ul>
+      </v-expansion-panel-content>
+    </v-expansion-panel>
+    <v-expansion-panel>
+      <v-expansion-panel-header>
+        <template #actions>
+          <v-icon>$expand</v-icon>
+        </template>
+        <v-row no-gutters align="center">
+          <v-col cols="auto">
+            <v-icon>mdi-translate</v-icon>
+          </v-col>
+          <v-col class="ml-2"> Languages </v-col>
+        </v-row>
+      </v-expansion-panel-header>
+      <v-expansion-panel-content>
+        <div>
+          <v-chip class="ma-1" color="secondary" text-color="#1a1a1a">English</v-chip>
+          <v-chip class="ma-1" color="secondary" text-color="#1a1a1a">Turkish</v-chip>
+          <v-chip class="ma-1" color="secondary" text-color="#1a1a1a">Japanese</v-chip>
+          <v-chip class="ma-1" color="secondary" text-color="#1a1a1a">German</v-chip>
+        </div>
+      </v-expansion-panel-content>
+    </v-expansion-panel>
+    <v-expansion-panel>
+      <v-expansion-panel-header>
+        <template #actions>
+          <v-icon>$expand</v-icon>
+        </template>
+        <v-row no-gutters align="center">
+          <v-col cols="auto">
+            <v-icon>mdi-heart-outline</v-icon>
+          </v-col>
+          <v-col class="ml-2"> Hobbies &amp; Interests </v-col>
+        </v-row>
+      </v-expansion-panel-header>
+      <v-expansion-panel-content>
+        <div>
+          <v-chip class="ma-1" color="accent">Digital Art</v-chip>
+          <v-chip class="ma-1" color="accent">Psychology</v-chip>
+          <v-chip class="ma-1" color="accent">Philosophy</v-chip>
+          <v-chip class="ma-1" color="accent">Science &amp; Technology</v-chip>
+          <v-chip class="ma-1" color="accent">Skiing</v-chip>
+          <v-chip class="ma-1" color="accent">Aikido</v-chip>
+          <v-chip class="ma-1" color="accent">Programming</v-chip>
+          <v-chip class="ma-1" color="accent">Acting</v-chip>
+        </div>
+      </v-expansion-panel-content>
+    </v-expansion-panel>
+  </v-expansion-panels>
 </template>
 
 <script lang="ts">

@@ -1,30 +1,28 @@
 <template>
-  <div>
-    <v-expansion-panels>
-      <v-expansion-panel v-for="(item, i) in items" :key="i">
-        <v-expansion-panel-header>
-          <template #actions>
-            <v-icon>$expand</v-icon>
-          </template>
-          <v-row no-gutters align="center">
-            <v-col cols="auto">
-              <v-icon>mdi-download</v-icon>
-            </v-col>
-            <v-col class="ml-2">
-              {{ item.title }}
-            </v-col>
-          </v-row>
-        </v-expansion-panel-header>
-        <v-expansion-panel-content>
-          <v-btn color="primary" class="ma-2 white--text" @click="window.open(item.url)">
-            Download {{ item.version }}
-            <v-icon right dark>mdi-download</v-icon>
-          </v-btn>
-          <editor v-model="item.description" mode="viewer" :outline="false" :render-config="renderConfig" />
-        </v-expansion-panel-content>
-      </v-expansion-panel>
-    </v-expansion-panels>
-  </div>
+  <v-expansion-panels>
+    <v-expansion-panel v-for="(item, i) in items" :key="i">
+      <v-expansion-panel-header>
+        <template #actions>
+          <v-icon>$expand</v-icon>
+        </template>
+        <v-row no-gutters align="center">
+          <v-col cols="auto">
+            <v-icon>mdi-download</v-icon>
+          </v-col>
+          <v-col class="ml-2">
+            {{ item.title }}
+          </v-col>
+        </v-row>
+      </v-expansion-panel-header>
+      <v-expansion-panel-content>
+        <v-btn color="primary" class="ma-2 white--text" @click="window.open(item.url)">
+          Download {{ item.version }}
+          <v-icon right dark>mdi-download</v-icon>
+        </v-btn>
+        <editor v-model="item.description" mode="viewer" :outline="false" :render-config="renderConfig" />
+      </v-expansion-panel-content>
+    </v-expansion-panel>
+  </v-expansion-panels>
 </template>
 
 <script lang="ts">

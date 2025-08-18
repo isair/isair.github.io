@@ -161,17 +161,6 @@ html,
   padding-top: 0;
 }
 
-/* Pull the first content up slightly so the banner image visually overlaps the panels */
-.overlap-banner {
-  margin-top: -48px;
-}
-
-@media (min-width: 960px) {
-  .overlap-banner {
-    margin-top: -96px;
-  }
-}
-
 .skip-link {
   position: absolute;
   left: 8px;

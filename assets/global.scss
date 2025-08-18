@@ -31,21 +31,6 @@ html, body {
 /* tighten expansion panel content spacing */
 .v-expansion-panel-content__wrap { padding: 16px 20px; }
 
-/* Hero utilities */
-.hero {
-  padding: 24px 20px 8px;
-  max-width: 600px; /* Constrain the title and subtitle width */
-}
-.hero-title {
-  font-weight: 700;
-  font-size: 1.5rem;
-  letter-spacing: -0.01em;
-}
-.hero-subtitle {
-  color: rgba(255,255,255,0.8);
-  margin-top: 4px;
-}
-
 /* Expansion panel header styling for a more professional look */
 .v-expansion-panel-header {
   font-weight: 600;
