@@ -40,7 +40,7 @@
     <app-bar :clipped="clipped" :label="appBarLabel" :sub-label="appBarSubLabel" @toggle-drawer="drawer = !drawer" />
 
     <v-main id="main-content">
-      <v-container :class="['page-container', { 'overlap-banner': isHome }]" fluid>
+      <v-container :class="['page-container', { 'overlap-banner': isHome }]">
         <nuxt />
       </v-container>
     </v-main>
@@ -169,6 +169,16 @@ html,
 .page-container {
   max-width: 1100px !important;
   padding-top: 0 !important;
+}
+
+.container {
+  padding-top: 0 !important;
+}
+
+@media (min-width: 1571px) {
+  .page-container {
+    max-width: 70vw !important;
+  }
 }
 
 /* Accessibility - Skip link for keyboard navigation */
