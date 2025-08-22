@@ -133,6 +133,7 @@ export default Vue.extend({
 </script>
 
 <style>
+/* Global background overrides */
 html,
 .v-application,
 .v-toolbar {
@@ -147,20 +148,30 @@ html,
   background-color: var(--v-drawer-base) !important;
 }
 
-.v-list {
-  padding-top: 0;
-  padding-bottom: 0;
+/* More specific selector for navigation drawer lists to ensure consistent styling */
+.v-navigation-drawer .v-list {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
 }
 
+/* Fallback for any other v-list that should have no padding */
+.v-list {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* Theme and color overrides */
 .my-app.v-application .primary--text {
   color: var(--v-primary-base) !important;
 }
 
+/* Layout container styling */
 .page-container {
   max-width: 1100px;
   padding-top: 0;
 }
 
+/* Accessibility - Skip link for keyboard navigation */
 .skip-link {
   position: absolute;
   left: 8px;
@@ -178,11 +189,13 @@ html,
   top: 8px;
 }
 
+/* Footer and link styling */
 .footer-link {
   color: var(--v-primary-base);
   text-decoration: underline;
 }
 
+/* Navigation drawer specific styles */
 .drawer-header {
   padding-top: 12px;
   padding-bottom: 12px;
