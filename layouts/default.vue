@@ -165,10 +165,10 @@ html,
   color: var(--v-primary-base) !important;
 }
 
-/* Layout container styling */
+/* Layout container styling - ensure consistent spacing across dev/production */
 .page-container {
-  max-width: 1100px;
-  padding-top: 0;
+  max-width: 1100px !important;
+  padding-top: 0 !important;
 }
 
 /* Accessibility - Skip link for keyboard navigation */
