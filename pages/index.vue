@@ -131,14 +131,16 @@
       </v-expansion-panel-header>
       <v-expansion-panel-content>
         <div>
+          <v-chip class="ma-1" color="accent">Acting</v-chip>
           <v-chip class="ma-1" color="accent">Digital Art</v-chip>
           <v-chip class="ma-1" color="accent">Psychology</v-chip>
-          <v-chip class="ma-1" color="accent">Philosophy</v-chip>
-          <v-chip class="ma-1" color="accent">Science &amp; Technology</v-chip>
           <v-chip class="ma-1" color="accent">Skiing</v-chip>
-          <v-chip class="ma-1" color="accent">Aikido</v-chip>
-          <v-chip class="ma-1" color="accent">Programming</v-chip>
-          <v-chip class="ma-1" color="accent">Acting</v-chip>
+          <v-chip class="ma-1" color="accent">Boxing</v-chip>
+          <v-chip class="ma-1" color="accent">Extreme Sports</v-chip>
+          <v-chip class="ma-1" color="accent">Cosmology</v-chip>
+          <v-chip class="ma-1" color="accent">Theoretical Physics</v-chip>
+          <v-chip class="ma-1" color="accent">Computer Science</v-chip>
+          <v-chip class="ma-1" color="accent">Machine Learning</v-chip>
         </div>
       </v-expansion-panel-content>
     </v-expansion-panel>
