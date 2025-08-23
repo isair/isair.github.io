@@ -133,6 +133,8 @@
         <div>
           <v-chip class="ma-1" color="accent">Acting</v-chip>
           <v-chip class="ma-1" color="accent">Digital Art</v-chip>
+          <v-chip class="ma-1" color="accent">Music Theory</v-chip>
+          <v-chip class="ma-1" color="accent">Saxophone</v-chip>
           <v-chip class="ma-1" color="accent">Psychology</v-chip>
           <v-chip class="ma-1" color="accent">Skiing</v-chip>
           <v-chip class="ma-1" color="accent">Boxing</v-chip>
