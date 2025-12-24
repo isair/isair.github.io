@@ -49,10 +49,11 @@
         </v-row>
       </v-expansion-panel-header>
       <v-expansion-panel-content>
-        <h2>Koç University - Istanbul, Turkey</h2>
-        <p><strong>Bachelor of Engineering (BE), Computer Engineering</strong></p>
-        <p>September 2009 - August 2013</p>
-        <ul>
+        <div class="text-h6 mb-1">Koç University</div>
+        <div class="text-subtitle-2 text--secondary mb-1">Istanbul, Turkey</div>
+        <div class="text-body-1 font-weight-medium">Bachelor of Engineering (BE), Computer Engineering</div>
+        <div class="text-body-2 text--secondary mb-3">September 2009 - August 2013</div>
+        <ul class="text-body-2">
           <li>Turkish - Speech and Composition (TURK. 100)</li>
           <li>General Physics I (PHYS. 101)</li>
           <li>Calculus I (MATH. 106)</li>
@@ -94,6 +95,40 @@
           <li>Mobile Device Programming (COMP. 319)</li>
           <li>Modern Cryptography (COMP. 443)</li>
         </ul>
+      </v-expansion-panel-content>
+    </v-expansion-panel>
+    <v-expansion-panel>
+      <v-expansion-panel-header>
+        <template #actions>
+          <v-icon>$expand</v-icon>
+        </template>
+        <v-row no-gutters align="center">
+          <v-col cols="auto">
+            <v-icon>mdi-certificate-outline</v-icon>
+          </v-col>
+          <v-col class="ml-2"> Licenses &amp; Certifications </v-col>
+        </v-row>
+      </v-expansion-panel-header>
+      <v-expansion-panel-content>
+        <v-list dense class="transparent">
+          <v-list-item v-for="cert in certifications" :key="cert.name" class="px-0 mb-2">
+            <v-list-item-content>
+              <v-list-item-title class="text-wrap text-body-1">{{ cert.name }}</v-list-item-title>
+              <v-list-item-subtitle class="text-body-2">{{ cert.issuer }} · {{ cert.date }}</v-list-item-subtitle>
+              <v-list-item-subtitle v-if="cert.description" class="text-body-2 text--secondary mt-1">
+                {{ cert.description }}
+              </v-list-item-subtitle>
+              <v-list-item-subtitle v-if="cert.credentialId" class="text-caption mt-1">
+                Credential ID: {{ cert.credentialId }}
+              </v-list-item-subtitle>
+            </v-list-item-content>
+            <v-list-item-action v-if="cert.credentialUrl">
+              <v-btn icon small :href="cert.credentialUrl" target="_blank" rel="noopener noreferrer">
+                <v-icon small>mdi-open-in-new</v-icon>
+              </v-btn>
+            </v-list-item-action>
+          </v-list-item>
+        </v-list>
       </v-expansion-panel-content>
     </v-expansion-panel>
     <v-expansion-panel>
@@ -158,6 +193,56 @@ export default Vue.extend({
     Editor,
   },
   data: () => ({
+    certifications: [
+      {
+        name: 'Supervised Machine Learning: Regression and Classification',
+        issuer: 'Stanford Online & DeepLearning.AI',
+        date: 'Oct 2025',
+        description: 'Part of the Machine Learning Specialization by Andrew Ng',
+        credentialId: 'RN5D6OEJ4VY4',
+        credentialUrl: 'https://www.coursera.org/account/accomplishments/verify/RN5D6OEJ4VY4',
+      },
+      {
+        name: 'Digital Payments (Card & POS) Tools and Strategies',
+        issuer: 'Udemy',
+        date: 'Dec 2024',
+        credentialUrl: 'https://www.udemy.com/certificate/UC-3c09d699-01f8-4f86-b34d-e604c781a97e/',
+      },
+      {
+        name: 'Amazon Web Services Cloud Practitioner',
+        issuer: 'Amazon Web Services (AWS)',
+        date: 'Jan 2023',
+        credentialUrl: 'https://www.credly.com/badges/683d5195-7caa-4f0d-95e5-f4c4de593464/public_url',
+      },
+      {
+        name: 'Leadership & Management Training',
+        issuer: 'Impellus',
+        date: 'Oct 2022',
+        description: 'Professional development for engineering leadership',
+      },
+      {
+        name: 'Machine Learning with Javascript',
+        issuer: 'Udemy',
+        date: 'Mar 2021',
+        credentialUrl: 'https://www.udemy.com/certificate/UC-1ed8ab72-0cfd-4237-8f60-d9822221f2dc/',
+      },
+      {
+        name: 'AML and CTF Training',
+        issuer: 'Equals',
+        date: 'Sep 2019',
+        description: 'Anti-Money Laundering and Counter-Terrorist Financing compliance',
+      },
+      {
+        name: 'Secure Coding',
+        issuer: 'Pen Test Partners',
+        date: 'Jul 2019',
+      },
+      {
+        name: 'Fire Warden Training and Fire Prevention Management',
+        issuer: 'FSS South',
+        date: 'Jan 2019',
+      },
+    ],
     cv: `## Equals Money
 
 ### Head of Product Engineering
