@@ -245,15 +245,33 @@ export default Vue.extend({
     ],
     cv: `## Equals Money
 
+### Director, AI Engineering
+
+#### Oct 2026 - ...
+
+Leading AI Engineering at Equals, with a remit of AI productivity for anyone who builds: engineers, designers, product managers and operations.
+
+- Running Crew, Equals' AI agent teams. Every pod has an AI team (product manager, team lead, architect, developer, reviewer and QA) that takes work from a Notion ticket through code, review, QA and release, while people approve the decisions that matter.
+- Designed Crew's control model: plain watcher scripts that read the real state in GitHub rather than trusting what an agent says, short-lived credentials per role, a central kill switch, and no agent able to merge or release on its own.
+- Own ai-rules, the shared library of AI rules, skills, quality gates and evals used by every engineer and every agent across 100+ repositories.
+- Built "Building with AI", an 8-module interactive course that teaches anyone at Equals, with no technical background needed, how LLMs, tools, memory and agents work. Followed it with "Shipping with AI", which teaches non-engineers to ship safely with git, pull requests, checks and releases.
+- Leading our AI provider failover plan, so delivery keeps running if a model provider goes down.
+
 ### Head of Product Engineering
 
-#### Feb 2023 - ...
+#### Feb 2023 - Oct 2026
 
-- Heading the product engineering department which owns the user-facing applications of all our brands under the Equals Group, and all our white labels.
-- Driven the integration of Roqqett's offerings successfully into our products one month after buying the company, which beforehand was a product not ready for production yet.
-- Lead the upgrade, which was a complete rewrite, of FairFX's legacy applications onto our new Equals Money platform, delivering the entire project within three months.
-- Developed a homebrew AI that is capable of reviewing code for security vulnerabilities, best practices, and alignment with specs in linked tickets, which is now a part of our CI/CD pipeline.
-- Worked with the design department to ensure we have a limited set of palette, contextual colours, size tokens, etc. - a reliable design system, which included a standardised way of defining icons and illustrations that get auto packaged.
+- Headed the product engineering department, owning the user-facing applications of every Equals Group brand and all our white labels.
+- Co-led the move to AI-native engineering: hit our 75% AI-generated code target in 4 weeks against a 3-month plan, reached 85%, and tripled code output year on year, with safety nets in place.
+- Built ai-rules, our shared AI rules and skills library, and its governance: two-approval reviews, the company's first evals, and an AI quality gate in CI that reviews code for security, best practices and alignment with the linked ticket. Rolled it out to 100+ repositories.
+- Designed and launched an autonomous AI build team that takes work from ticket to release, later rolled out across the organisation as Crew.
+- Integrated Roqqett's offerings into our products one month after the acquisition, when it was not yet production ready.
+- Led the complete rewrite of FairFX's legacy applications onto the Equals Money platform, delivered within three months.
+- Led the Equals website relaunch, and turned a design reskin into designer-run AI delivery, with designers shipping real code instead of mockups.
+- Built a reliable design system with the design team: a limited palette, contextual colours, size tokens, and auto-packaged icons and illustrations.
+- Delivered a regulatory complaints portal on an FCA deadline by capping scope early.
+- Redesigned release approvals, incident follow-ups and PR review automation, and cut required reviews from 4 to 3 across the organisation.
+- Designed an AI-first interview process, wrote Equals' first engineering blog post, open-sourced Claude Secretary, and presented our AI practices at TowerBrook's AI Roundtable.
 
 ### Engineering Lead
 
